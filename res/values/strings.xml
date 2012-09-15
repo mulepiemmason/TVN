@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, TVNActivity!</string>
+    <string name="app_name">TVN</string>
+    <string name="category">Category</string>
+    <string name="default_name_text">Enter task name</string>
+    <string name="dueDateLabel">Due Date</string>
+    <string name="alarmCheckBox">Alarm?</string>
+    <string name="priorityLabelText">Priority</string>
+    <string name="progressLabelText">Progress (%)</string>
+    <string name="saveButtonText">Save Task</string>
+    <string name="saveCategoryText">Save Category</string>
+    <string name="no_tasks">No tasks created yet!</string>
+    <string name="new_task">New Task</string>
+    <string name="manage_categories">Categories</string>
+    <string name="new_category">New Category</string>
+    <string name="name">Name:</string>
+    <string name="description">Description:</string>
+    <string name="update_category">Update</string>
+    <string name="delete_category">Delete</string>
+    <string name="due_date">Due Date:</string>
+    <string name="due_time">Due Time:</string>
+    <string name="display_task_category">Category:</string>
+    <string name="display_task_priority">Priority:</string>
+    <string name="display_task_alarm">Alarm? - </string>
+    <string name="display_task_progress">Progress:</string>
+    <string name="update_task">Update</string>
+    <string name="delete_task">Delete</string>
+    <string name="new_subtask">Create Subtask</string>
+    <string name="subtask_label">Subtasks</string>
+    <string name="subtask_estimate">Estimate:</string>
+    <string name="subtask_todo">To-Do:</string>
+    <string name="saveSubtaskText">Save Subtask</string>
+    <string name="update_subtask">Update</string>
+    <string name="delete_subtask">Delete</string>
+    <string name="hours">hrs</string>
+    <string-array name="Priority_Array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string name="new_notebook">New Notebook</string>
+    <string name="save_notebook">Save Notebook</string>
+    <string name="update_notebook">Update</string>
+    <string name="delete_notebook">Delete</string>
+    <string name="new_note">Create Note</string>
+    <string name="notes_label">Notes:</string>
+    <string name="save_note">Save Note</string>
+    <string name="update_note">Update</string>
+    <string name="delete_note">Delete</string>
+    <string name="search_notebooks">Search</string>
+    <string name="search_results">Notes containing:</string>
+    <string name="import_string">Import</string>
+    <string name="export_string">Export</string>
+    <string name="is_due">is due!</string>
+    <string name="ok">Ok</string>
+</resources>

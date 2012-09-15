@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/new_notebook"
+          android:title="@string/new_notebook"/>
+<item android:id="@+id/search_notebooks"
+          android:title="@string/search_notebooks"/> 
+<item android:id="@+id/import_string"
+          android:title="@string/import_string"/> 
+<item android:id="@+id/export_string"
+          android:title="@string/export_string"/>             
+</menu>

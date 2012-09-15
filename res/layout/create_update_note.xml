@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:weightSum="1">
+    <RelativeLayout android:layout_width="match_parent" android:id="@+id/relativeLayout1" android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:id="@+id/createNoteNameLabel" android:text="@string/name"></TextView>
+        <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/createNoteNameTextField" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/createNoteNameLabel" android:layout_marginLeft="29dp" android:layout_alignParentRight="true">
+            <requestFocus></requestFocus>
+        </EditText>
+    </RelativeLayout>
+    <EditText android:layout_width="match_parent" android:inputType="textMultiLine" android:id="@+id/createNoteText" android:gravity="top" android:layout_height="358dp">
+    </EditText>
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/relativeLayout2" android:layout_weight="0.70">
+        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_centerVertical="true" android:layout_centerHorizontal="true" android:id="@+id/createNoteSaveButton" android:text="@string/save_note"></Button>
+    </RelativeLayout>
+    
+</LinearLayout>

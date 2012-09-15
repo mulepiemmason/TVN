@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:weightSum="1">
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.05">
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:text="TextView" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:id="@+id/displaySubtaskName"></TextView>
+    </RelativeLayout>
+    <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout1" android:orientation="vertical" android:background="@color/red" android:layout_weight="0.03" android:layout_height="3dp"></LinearLayout>
+    <RelativeLayout android:id="@+id/relativeLayout2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.17">
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:id="@+id/dispalySubtaskEstimateLabel" android:text="@string/subtask_estimate"></TextView>
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentLeft="true" android:id="@+id/displaySubtaskTodoLabel" android:text="@string/subtask_todo"></TextView>
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:text="TextView" android:layout_height="wrap_content" android:layout_alignBottom="@+id/dispalySubtaskEstimateLabel" android:layout_centerHorizontal="true" android:id="@+id/displaySubtaskEstimateValue"></TextView>
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:text="TextView" android:layout_height="wrap_content" android:layout_alignBaseline="@+id/displaySubtaskTodoLabel" android:layout_alignBottom="@+id/displaySubtaskTodoLabel" android:layout_alignLeft="@+id/displaySubtaskEstimateValue" android:id="@+id/displaySubtaskTodoValue"></TextView>
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@+id/displaySubtaskEstimateValue" android:layout_alignBottom="@+id/displaySubtaskEstimateValue" android:layout_toRightOf="@+id/displaySubtaskEstimateValue" android:layout_marginLeft="19dp" android:id="@+id/estimateHrsLabel" android:text="@string/hours"></TextView>
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:id="@+id/todoHrsLabel" android:text="@string/hours" android:layout_height="wrap_content" android:layout_alignBottom="@+id/displaySubtaskTodoLabel" android:layout_alignLeft="@+id/estimateHrsLabel"></TextView>
+    </RelativeLayout>
+    
+</LinearLayout>

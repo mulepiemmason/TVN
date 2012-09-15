@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      android:versionCode="1"
+      android:versionName="1.0" package="edu.fullerton.tvn">
+    <uses-sdk android:minSdkVersion="10" />
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="true">
+        <activity android:name=".TVNActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity android:name=".activity.ListTasksActivity"></activity>
+		<activity android:name=".activity.ListNotesActivity"></activity>
+		<activity android:name=".activity.CreateUpdateTaskActivity"></activity>
+		<activity android:name=".activity.ListCategoriesActivity"></activity>
+		<activity android:name=".activity.CreateUpdateCategoryActivity"></activity>
+		<activity android:name=".activity.DisplayCategoryActivity"></activity>
+		<activity android:name=".activity.DisplayTaskActivity"></activity>
+		<activity android:name=".activity.CreateUpdateSubtaskActivity"></activity>
+		<activity android:name=".activity.DisplaySubtaskActivity"></activity>
+		<activity android:name=".activity.DisplayNotebookActivity"></activity>
+		<activity android:name=".activity.CreateUpdateNotebookActivity"></activity>
+		<activity android:name=".activity.CreateUpdateNoteActivity"></activity>
+		<activity android:name=".activity.DisplayNoteActivity"></activity>
+		<activity android:name=".activity.DisplaySearchResultsActivity"></activity>
+		<activity android:name=".activity.NotifyTaskDueActivity"></activity>
+		<receiver android:name=".alarm.AlarmReceiver"></receiver>
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest>

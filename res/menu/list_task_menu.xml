@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<item android:id="@+id/new_task"
+          android:title="@string/new_task"/>
+<item android:id="@+id/manage_categories"
+          android:title="@string/manage_categories"/>
+<item android:id="@+id/import_string"
+          android:title="@string/import_string"/> 
+<item android:id="@+id/export_string"
+          android:title="@string/export_string"/>  
+</menu>

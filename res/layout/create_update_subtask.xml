@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:weightSum="1">
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/nameLabel" android:layout_marginLeft="26dp" android:layout_alignParentRight="true" android:id="@+id/createUpdateNameTextField">
+            <requestFocus></requestFocus>
+        </EditText>
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:id="@+id/nameLabel" android:text="@string/name" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentLeft="true"></TextView>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/relativeLayout2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.12">
+        <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:width="75px" android:id="@+id/createUpdateSubtaskToDo"></EditText>
+        <EditText android:width="75px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/estimateLabel" android:layout_marginLeft="14dp" android:id="@+id/createUpdateSubtaskEstimate"></EditText>
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:id="@+id/estimateLabel" android:text="@string/subtask_estimate" android:layout_height="wrap_content" android:layout_alignBaseline="@+id/createUpdateSubtaskEstimate" android:layout_alignBottom="@+id/createUpdateSubtaskEstimate" android:layout_alignParentLeft="true"></TextView>
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:id="@+id/todoLabel" android:text="@string/subtask_todo" android:layout_height="wrap_content" android:layout_alignBaseline="@+id/createUpdateSubtaskToDo" android:layout_alignBottom="@+id/createUpdateSubtaskToDo" android:layout_toLeftOf="@+id/createUpdateSubtaskToDo" android:layout_marginRight="17dp"></TextView>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/relativeLayout3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.25">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/saveSubtaskText" android:id="@+id/saveSubtaskButton" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"></Button>
+    </RelativeLayout>
+    
+</LinearLayout>

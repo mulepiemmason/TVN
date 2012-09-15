@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:orientation="vertical" android:weightSum="1">
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:id="@+id/displayTaskNameLabel" android:text="@string/name"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/displayTaskNameLabel" android:layout_marginLeft="17dp" android:id="@+id/displayTaskNameValue"></TextView>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/relativeLayout2" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:id="@+id/displaytaskDueDateLabel" android:text="@string/due_date"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/displaytaskDueDateLabel" android:layout_marginLeft="17dp" android:id="@+id/displayTaskDueDateValue"></TextView>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/relativeLayout3" android:layout_width="match_parent" android:layout_height="27dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:id="@+id/displayTaskDueTimeLabel" android:text="@string/due_time"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/displayTaskDueTimeLabel" android:layout_marginLeft="18dp" android:id="@+id/displayTaskDueTimeValue"></TextView>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/relativeLayout4" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:id="@+id/displayTaskCategoryLabel" android:text="@string/display_task_category"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/displayTaskCategoryValue" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/displayTaskCategoryLabel" android:layout_marginLeft="18dp"></TextView>
+    </RelativeLayout>
+    <RelativeLayout android:layout_height="wrap_content" android:id="@+id/relativeLayout5" android:layout_width="match_parent" android:layout_weight="0.09">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:id="@+id/displayTaskPriorityLabel" android:text="@string/display_task_priority"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/displayTaskPriorityLabel" android:layout_marginLeft="30dp" android:id="@+id/displayTaskPriorityValue"></TextView>
+    </RelativeLayout>
+    <RelativeLayout android:layout_height="wrap_content" android:id="@+id/relativeLayout6" android:layout_width="match_parent" android:layout_weight="0.10">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:id="@+id/displayTaskAlarmLabel" android:text="@string/display_task_alarm"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/displayTaskAlarmValue" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/displayTaskAlarmLabel"></TextView>
+    </RelativeLayout>
+    <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:id="@+id/displayTaskProgressLabel" android:text="@string/display_task_progress"></TextView>
+        <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_height="wrap_content" android:id="@+id/displayTaskProgressValue" android:layout_width="match_parent"></ProgressBar>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/relativeLayout7" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:id="@+id/displayTaskSubtaskLabel" android:text="@string/subtask_label"></TextView>
+    </RelativeLayout>
+    <ListView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/displayTaskSubtaskList"></ListView>
+    
+</LinearLayout>
